@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+      <!--  -->
+      <a href="#main"><img src="images/logo.png" alt="cweb-logo" class="logo"></a>
+      <!-- menu -->
+      <ul class="menu">
+        <li><a href="#main">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    
+  <!-- main -->
+  <main id="main">
+    <!--hero section -->
+    <section id="hero">
+    <div class="flex-column wrapper gap-2 flex-center ">
+      <h3>Concepts to Buildable Architecture</h3>
+      <p>Reliable & Accurate Plans & Calculations.</p>
+      <div class="btn-container">
+        <a href="#projects" class="btn">Learn More</a>
+        <a href="#contact" class="btn primary-btn">Contact Me</a>
+      </div>
+    </div>
+    </section>
+    
+    <!-- about section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="wrapper flex-container">
+        <div class="about-text flex-column flex-1_5 flex-start gap-2">
+          <p>hello, my name is </p>
+          <p class="title-text">Stanley Asati.</p>
+          <p class=""><span class="profession-text"></span> Designer!</p>
+          <!-- a btns -->
+      <div class="btn-container">
+        <a id="viewCV" class="btn">View CV</a>
+        <a id="downloadCV" class="btn primary-btn">Download CV</a>
+      </div>
+  
+     <!-- social links -->
+    <ul class="social-links-about">
+      <li><a href="#">FB</a></li>
+      <a class="line-div">|</a>
+      <li><a href="#">YT</a></li>
+      <a class="line-div">|</a>
+      <li><a href="">TW</a></li>
+    </ul>
+        </div>
+        
+        <div class="about-image flex-column flex-1">
+          <a href="#"><img src="images/profile.JPG" alt="profile-image" /></a>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="wrapper flex-container">
+        <!-- hidden card template -->
+         <article class="card" id="card-template" style="display: none;">
+          <!-- linking all elements in the card -->
+           <a href="#" class="card-link">
+            <h3 class="card-title">Card Title</h3>
+          </a>
+          <a href="#" class="card-link">
+            <img src="" class="card-image" alt="" />
+          </a>
+          <p class="card-snippet">Snippet goes here...</p>
+          <a href="#" class="card-link card-btn">
+            Read More
+          </a>
+         </article>
+      </div>
+    </section>
+     
+    <!-- contact section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="wrapper flex-container">
+      <div class="flex-column flex-1_5">
+        <h3>Get In Touch</h3>
+        <p>Let's discuss your project and bring your architectural or structural ideas to life.</p>
+      </div>
+      <div class="flex-column flex-1">
+  <form action="https://formsubmit.co/stanlyasati@gmail.com" method="post" accept-charset="utf-8">
+    <div class="input-container flex-container">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+    </div>
+    <textarea id="message" name="message" rows="10" placeholder="Write your message..." required></textarea>
+    <!-- captcha -->
+    <input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="thankyou.html">
+  <button type="submit" class="btn primary-btn">Send Message</button>
+    </form>
+      </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- footer -->
+  <footer>
+    <!-- social links -->
+    <ul class="social-links">
+      <li><a href="#">FB</a></li>
+      <a class="line-div">|</a>
+      <li><a href="#">YT</a></li>
+      <a class="line-div">|</a>
+      <li><a href="">TW</a></li>
+    </ul>
+    
+    <!-- footer menu -->
+    <ul class="menu-footer">
+      <li><a href="#hero">Home</a></li>
+      <a class="line-div">|</a>
+      <li><a href="#privacy">Privacy</a></li>
+      <a class="line-div">|</a>
+      <li><a href="#terms">T & C</a></li>
+    </ul>
+
+    <!-- copyright -->
+    <p class="small-text">
+     &copy; 2025 | <a class="small-text" href="#">Stanley Asati</a>. All Rights Reserved. | Made with ❤️  from KE
+    </p>
+  </footer>
+  
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
